@@ -17,8 +17,6 @@ parent: Modules
 - [ContT2 (interface)](#contt2-interface)
 - [ContT3 (interface)](#contt3-interface)
 - [getContM (function)](#getcontm-function)
-- [map (function)](#map-function)
-- [map\_ (function)](#map_-function)
 
 ---
 
@@ -151,35 +149,3 @@ export function getContM<M>(M: Monad<M>): ContM<M> { ... }
 ```
 
 Added in v0.0.1
-
-# map (function)
-
-**Signature**
-
-```ts
-export function map<F extends URIS3>(F: Functor3<F>): Functor3<F>[MapTag]
-export function map<F extends URIS2>(F: Functor2<F>): Functor2<F>[MapTag]
-export function map<F extends URIS2, L>(
-  F: Functor2C<F, L>,
-): Functor2C<F, L>['map']
-export function map<F extends URIS>(F: Functor1<F>): Functor1<F>[MapTag] { ... }
-```
-
-# map\_ (function)
-
-**Signature**
-
-```ts
-export function map_<F extends URIS3>(
-  F: PipeableFunctor3<F>,
-): PipeableFunctor3<F>[MapTag]
-export function map_<F extends URIS2>(
-  F: PipeableFunctor2<F>,
-): PipeableFunctor2<F>[MapTag]
-export function map_<F extends URIS2, L>(
-  F: PipeableFunctor2C<F, L>,
-): PipeableFunctor2C<F, L>[MapTag]
-export function map_<F extends URIS>(
-  F: PipeableFunctor1<F>,
-): PipeableFunctor1<F>[MapTag] { ... }
-```
