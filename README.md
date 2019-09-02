@@ -1,3 +1,5 @@
 # An implementation of the continuation monad for [fp-ts](https://github.com/gcanti/fp-ts)
 
-## WIP / Not yet published
+## WIP
+
+Install with `npm install fp-ts-cont` or `yarn add fp-ts-cont`
